@@ -1,1 +1,18 @@
 
+name: Test pipeline
+
+on:
+  push:
+    branches:
+      - feature/nodeapp
+
+jobs:
+  demo1:
+    runs-on: [self-hosted, Linux]
+
+    steps:
+      - name: Checkout branch
+        uses: actions/checkout@v4
+
+      - name: Printing some statement
+        run: echo "Running successfully"
