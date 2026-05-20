@@ -4,6 +4,8 @@ on:
   push:
     branches:
       - nodeapp
+  pull_request: 
+      - branches: main
 
 jobs:
   demo:
