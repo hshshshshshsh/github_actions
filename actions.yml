@@ -3,8 +3,6 @@ name: Test pipeline
 
 on:
   push:
-
-
 jobs:
   demo1:
     runs-on: Linux
