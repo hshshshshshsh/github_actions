@@ -1,14 +1,17 @@
-name: Demo pippline
+name: Demo Pipeline
 
-on: 
+on:
   push:
-    branches: nodeapp
-jobs:
-  demo: 
-    runs-on: [self-hosted, Linux]
-    steps:
-      -name: checkout code
-      - uses: actions/checkout@v6
+    branches:
+      - nodeapp
 
-      -name: print the details 
-      -run: echo "code checkout"
+jobs:
+  demo:
+    runs-on: [self-hosted, Linux]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Print the details
+        run: echo "code checkout"
