@@ -1,0 +1,14 @@
+name: Demo pippline
+
+on: 
+  push:
+    branches: nodeapp
+jobs:
+  demo: 
+    runs-on: [self-hosted, Linux]
+    steps:
+      -name: checkout code
+      - uses: actions/checkout@v6
+
+      -name: print the details 
+      -run: echo "code checkout"
