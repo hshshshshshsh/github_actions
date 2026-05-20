@@ -1,7 +1,5 @@
 
 name: Test pipeline
-
-
 on:
   push:
     branches:
