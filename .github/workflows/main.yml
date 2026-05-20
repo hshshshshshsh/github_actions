@@ -7,7 +7,7 @@ on:
 
 jobs:
   demo:
-    runs-on: [self-hosted, Linux]
+    runs-on: githubactions
 
     steps:
       - name: Checkout code
