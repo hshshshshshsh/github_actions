@@ -1,19 +1,1 @@
-name: Demo Pipeline
 
-on:
-  push:
-    branches:
-      - nodeapp
-  pull_request: 
-      - branches: main
-
-jobs:
-  demo:
-    runs-on: linux
-
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
-
-      - name: Print the details
-        run: echo "code checkout"
