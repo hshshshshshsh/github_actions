@@ -4,13 +4,9 @@ name: Test pipeline
 on:
   push:
 
-  
-    branches:
-      - feature/nodeapp
-
 jobs:
   demo1:
-    runs-on: [self-hosted, Linux]
+    runs-on: Linux
 
     steps:
       - name: Checkout branch
